@@ -15,11 +15,11 @@ export class AddressEntity {
   @Column({ name: 'user_id', nullable: false })
   userId: number;
 
-  @Column({ name: 'complement', nullable: false })
+  @Column({ name: 'complement' })
   complement: string;
 
-  @Column({ name: 'number' })
-  numberAddress: string;
+  @Column({ name: 'number', nullable: false })
+  numberAddress: number;
 
   @Column({ name: 'cep', nullable: false })
   cep: string;
